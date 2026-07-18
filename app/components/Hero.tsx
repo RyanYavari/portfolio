@@ -1,24 +1,38 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center px-6 pt-32 pb-24 sm:pt-40 sm:pb-32">
       <div className="w-full max-w-3xl">
-        <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
-          Ryan Yavari
-        </h1>
-        <p className="mt-4 font-mono text-lg text-accent sm:text-xl">
-          Software Engineer / AI Engineer
-        </p>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-          I build production AI systems, RAG pipelines, and agentic
-          applications. Currently pursuing Georgia Tech&apos;s OMSCS (AI
-          specialization) while shipping real products.
-        </p>
-        <p className="mt-3 text-sm text-muted/70">
-          SJSU CS grad, 2025. Open to relocation.
-        </p>
+        <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
+              Ryan Yavari
+            </h1>
+            <p className="mt-4 font-mono text-lg text-accent sm:text-xl">
+              Software Engineer / AI Engineer
+            </p>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+              I build production AI systems, RAG pipelines, and agentic
+              applications. Currently pursuing Georgia Tech&apos;s OMSCS (AI
+              specialization) while shipping real products.
+            </p>
+            <p className="mt-3 text-sm text-muted/70">
+              SJSU CS grad, 2025. Open to relocation.
+            </p>
+          </div>
+          <Image
+            src="/grad_photo.jpeg"
+            alt="Ryan Yavari"
+            width={350}
+            height={350}
+            className="aspect-square rounded-full border-2 border-border object-cover"
+            priority
+          />
+        </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="/resume.pdf"
+            href="/RyanYavari_Resume_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90"

@@ -27,7 +27,6 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-xs text-muted/50">
-          Built with Next.js and Claude Code
         </p>
       </div>
     </footer>
