@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="/RyanYavari_Resume_2026.pdf"
+            href="/Ryan Yavari Oct 2026 Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
