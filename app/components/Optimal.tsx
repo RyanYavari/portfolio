@@ -20,7 +20,7 @@ const projects = [
   {
     title: "PrepAgent",
     subtitle: "AI Interview Research Agent",
-    date: "June 2026 — Present",
+    date: "Sept. 2026 — Oct. 2026",
     description:
       "An MCP-native multi-agent system using a LangGraph supervisor graph with 4 specialized agents, integrating Gmail, Google Calendar, and Google Drive via Google OAuth to autonomously detect interview invites and trigger a personalized research pipeline without manual user input. Features a RAG pipeline with Pinecone, Cohere Rerank, and OpenAI embeddings to retrieve and rerank context across heterogeneous sources, with a RAGAS eval suite tracking answer relevance, faithfulness, and context precision. Targets sub-2-minute end-to-end generation for research that currently takes 45 minutes of manual review.",
     tags: ["LangGraph", "MCP", "Pinecone", "Cohere Rerank", "RAGAS", "Google OAuth"],
