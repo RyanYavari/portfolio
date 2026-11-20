@@ -22,9 +22,13 @@ const projects = [
     subtitle: "AI Interview Research Agent",
     date: "Sept. 2026 — Oct. 2026",
     description:
-      "An MCP-native multi-agent system using a LangGraph supervisor graph with 4 specialized agents, integrating Gmail, Google Calendar, and Google Drive via Google OAuth to autonomously detect interview invites and trigger a personalized research pipeline without manual user input. Features a RAG pipeline with Pinecone, Cohere Rerank, and OpenAI embeddings to retrieve and rerank context across heterogeneous sources, with a RAGAS eval suite tracking answer relevance, faithfulness, and context precision. Targets sub-2-minute end-to-end generation for research that currently takes 45 minutes of manual review.",
-    tags: ["LangGraph", "MCP", "Pinecone", "Cohere Rerank", "RAGAS", "Google OAuth"],
+      "A full-stack AI interview-prep app. You enter a company, role, and optionally an interviewer and a job description, and a LangGraph pipeline researches the company and interviewer on the web in parallel, retrieves your resume and prior same-company briefings from pgvector, and synthesizes a four-section briefing with Claude. Every talking point must cite a source URL or a resume section, and the backend validates those citations and drops anything uncited, so unsupported claims are visible instead of hidden. Google OAuth handles sign-in, and an optional Google Calendar connection detects interview events and proposes a briefing for you to confirm. Quality is tracked with a RAGAS evaluation harness (faithfulness, answer relevancy, context precision) with committed baselines, and the service is hardened with timeouts and retries, rate limits, per-user cost caps, and prompt-injection defenses. Built with FastAPI, Next.js, Supabase Postgres, Docker on AWS and Vercel, and GitHub Actions CI.",
+    tags: ["LangGraph", "Claude", "pgvector", "FastAPI", "Next.js", "RAGAS", "Google OAuth"],
     links: [
+      {
+        label: "useprepagent.app",
+        href: "https://useprepagent.app",
+      },
       {
         label: "GitHub",
         href: "https://github.com/ryanyavari/prepagent",
